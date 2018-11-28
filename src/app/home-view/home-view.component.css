@@ -1,0 +1,18 @@
+.homehead {
+  padding-top: calc(6rem + 40px);
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 992px) {
+  .homehead {
+    padding-top: calc(6rem + 100px);
+    padding-bottom: 6rem;
+  }
+  .homehead h1 {
+    font-size: 4.75em;
+    line-height: 4rem;
+  }
+  .homehead h2 {
+    font-size: 1.75em;
+  }
+}

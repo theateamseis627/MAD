@@ -1,0 +1,93 @@
+<header class="masthead bg-primary text-white text-center">
+  <div class="container">
+    <form class="form-horizontal">
+      <fieldset>
+        <!-- Form Name -->
+        <legend>Ask a Question</legend>
+        <!-- Textarea -->
+        <div class="form-group row panel">
+          <label class="col-md-2 control-label" for="textarea">Question</label>
+          <div class="col-md-8">
+            <textarea class="form-control" id="textarea" name="textarea">Type your question here</textarea>
+          </div>
+        </div>
+
+        <!-- Multiple Checkboxes -->
+        <div class="form-group row">
+          <label class="col-md-2 control-label" for="checkboxes">Options</label>
+          <div class="col-md-8">
+            <div class="checkbox">
+              <label for="checkboxes-0">
+                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Require everyone to vote.
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="checkboxes-1">
+                <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2"> Make anonymous.
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="checkboxes-2">
+                <input type="checkbox" name="checkboxes" id="checkboxes-2" value=""> Allow decision makers to add options.
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="checkboxes-3">
+                <input type="checkbox" name="checkboxes" id="checkboxes-3" value=""> IP Duplication Checking
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="checkboxes-4">
+                <input type="checkbox" name="checkboxes" id="checkboxes-4" value=""> Browser Cookie Duplication Checking
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multiple Radios -->
+        <div class="form-group row">
+          <label class="col-md-2 control-label" for="radios">Voting Method</label>
+          <div class="col-md-8">
+            <div class="radio">
+              <label for="radios-0">
+                <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Choose 1
+              </label>
+            </div>
+            <div class="radio">
+              <label for="radios-1">
+                <input type="radio" name="radios" id="radios-1" value="2"> Choose top 3
+              </label>
+            </div>
+            <div class="radio">
+              <label for="radios-2">
+                <input type="radio" name="radios" id="radios-2" value=""> Weighted/Points system
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group row">
+          <label class="col-md-2 control-label" for="textinput">Admin Code</label>
+          <div class="col-md-8">
+            <input id="textinput" name="textinput" type="text" placeholder="Enter a code you will remember" class="form-control input-md"
+              required="">
+            <span class="help-block">Enter an admin code that you will use to login and administer the decision</span>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group row">
+          <label class="col-md-2 control-label" for="singlebutton">Create the question</label>
+          <div class="col-md-8">
+            <a routerLink="/decisioncode" routerLinkActive="active">
+              <button type="button" class="btn btn-secondary">Submit</button>
+            </a>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+
+  </div>
+</header>

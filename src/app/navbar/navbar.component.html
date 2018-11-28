@@ -1,0 +1,27 @@
+<!-- Navigation -->
+<nav class="navbar bg-secondary fixed-top text-uppercase" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" routerLink="" routerLinkActive="active">Make A Decision</a>
+    <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button"
+      (click)="toggleCollapse()" *ngIf="showMenu">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive" [ngClass]="{'show': menuToggle}">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-0 mx-lg-1" *ngIf="decideMenu">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" routerLink="/decide" routerLinkActive="active">Options</a>
+        </li>
+        <!-- <li class="nav-item mx-0 mx-lg-1" *ngIf="decideMenu">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" routerLink="/compare" routerLinkActive="active">Compare</a>
+        </li> -->
+        <li class="nav-item mx-0 mx-lg-1" *ngIf="decideMenu">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" routerLink="/comment" routerLinkActive="active">Comment</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1" *ngIf="decideMenu">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" routerLink="/vote" routerLinkActive="active">Vote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
